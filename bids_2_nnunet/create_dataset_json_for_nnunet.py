@@ -4,6 +4,14 @@ import numpy as np
 import json
 import re
 
+"""
+Created on May 3, 2021
+
+@author: Tommaso Di Noto
+
+This script generates the file "dataset.json" required to run nnUNet (https://github.com/MIC-DKFZ/nnUNet)
+"""
+
 
 def save_json(obj, file, indent=4, sort_keys=True):
     with open(file, 'w') as f:
