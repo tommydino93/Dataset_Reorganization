@@ -289,9 +289,9 @@ def scramble_sessions(bids_dir: str, out_dir: str, days_to_shift: int = 31) -> N
 
 def main():
     # define input args
-    bids_dir = "/media/newuser/HDisk-Tommy/Aneurysms_Project/BIDS_Aneurysm_Dataset_Defaced_Nov_16_2021"  # path to BIDS dataset
+    bids_dir = "/path/to/BIDS/dataset"  # path to BIDS dataset
     days_to_shift = 31  # type: int # we randomly shift the dates in the range of +- [0, days_to_shift]
-    out_dir = "/home/newuser/Desktop/"  # path where we save the session mapping (old session -> scrambled session)
+    out_dir = "/path/to/output/dit"  # path where we save the session mapping (old session -> scrambled session)
 
     scramble_sessions(bids_dir, out_dir, days_to_shift)
 
