@@ -259,7 +259,7 @@ def scramble_sessions(bids_dir: str, out_dir: str, days_to_shift: int = 31) -> N
     df_mapping = create_mapping_old_ses_2_scrambled_ses(bids_dir, days_to_shift)
     # save mapping to disk
     date = datetime.datetime.today().strftime('%b_%d_%Y')  # type: str # save today's date
-    df_mapping.to_csv(os.path.join(out_dir, "mapping_old_ses2scrambled_ses_{}.csv".format(date)))
+    df_mapping.to_csv(os.path.join(out_dir, "mapping_old_ses2scrambled_ses_{}.csv".format(date)), index=False)
     print("\nMapping saved in {}".format(out_dir))
 
     # --------- 2) Scramble sessions in original (i.e. non-derivatives) data directory ---------
